@@ -1,0 +1,39 @@
+.common--button {
+	border: 0;
+	border-radius: 5px;
+	color: $blanco;
+	background-color: $gris;
+	font-size: 16px;
+	height: 44px;
+	width: 110px;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+	&.satisfactorio {
+		background-color: $verde-claro;
+	}
+
+	&.primario {
+		background-color: $azul;
+	}
+
+	&.error {
+		background-color: $rojo-oscuro;
+	}
+
+	&.borde-primario, &.borde-error {
+		background-color: $blanco;
+	}
+
+	&.borde-primario {
+		color: $azul;
+		border: 2px solid opacify($azul-claro, 0.5);
+	}
+
+	&.borde-error {
+		color: $rojo-oscuro;
+		border: 2px solid opacify($rojo-oscuro, 0.5);
+	}
+}

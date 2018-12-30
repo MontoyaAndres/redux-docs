@@ -1,0 +1,79 @@
+&--form {
+	padding: 5% 10% 3%;
+
+	&_etiqueta_actualizacion {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 8px;
+
+		.etiqueta {
+			color: $anaranjado-oscuro;
+			background-color: $anaranjado-claro;
+			font-size: 12px;
+			padding: 4px 8px;
+			border-radius: 5px;
+		}
+	}
+
+	&_contenedor {
+		display: flex;
+		flex-direction: row;
+
+		.agenda--form {
+			&_inputs {
+				.celular {
+					margin: 0 32px 0 16px;
+				}
+
+				.common--input_text {
+					@media only screen and (max-width: $media-small) {
+						width: 150px;
+					}
+				}
+			}
+
+			&_barra_acciones {
+				margin-left: 16px;
+
+				.limpiar {
+					margin-left: 8px;
+				}
+
+				.common--button {
+					&.borde-primario {
+						margin-right: 8px;
+					}
+				}
+			}
+
+			@media only screen and (max-width: 1124px) {
+				display: flex;
+				flex-direction: column;
+
+				&_inputs {
+					display: flex;
+					flex-direction: row;
+					width: 100%;
+
+					.celular {
+						margin: 0 0 0 8px;
+					}
+
+					.common--input_text {
+						width: 98%;
+						margin-bottom: 8px;
+					}
+				}
+
+				&_barra_acciones {
+					display: flex;
+					flex-direction: row;
+
+					.common--button {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}

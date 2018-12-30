@@ -1,0 +1,16 @@
+.app {
+	&--header {
+		align-items: center;
+		background-color: $azul-oscuro;
+		box-shadow: 0px 2px rgba(0, 0, 0, .2);
+		display: flex;
+		flex-direction: row;
+		height: 80px;
+
+		&_marca {
+			color: $gris-claro;
+			font-size: 38px;
+			padding-left: 28px;
+		}
+	}
+}

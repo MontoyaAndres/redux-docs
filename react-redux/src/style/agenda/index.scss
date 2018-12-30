@@ -1,0 +1,7 @@
+.agenda {
+	background-color: $blanco;
+	margin-bottom: 48px;
+
+	@import "form";
+	@import "grid";
+}

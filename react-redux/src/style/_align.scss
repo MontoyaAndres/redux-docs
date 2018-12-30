@@ -1,0 +1,16 @@
+.align-center, .align-left, .align-right {
+	display: flex;
+	flex-direction: row;
+}
+
+.align-center {
+	justify-content: center;
+}
+
+.align-left {
+	justify-content: flex-start;
+}
+
+.align-right {
+	justify-content: flex-end;
+}

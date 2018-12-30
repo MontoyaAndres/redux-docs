@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-0",
+    "stage-3"
+  ],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"]
+    },
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel"
+      ]
+    }
+  }
+}
